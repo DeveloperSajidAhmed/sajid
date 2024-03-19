@@ -1,39 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assesment</title>
     <style>
+        /* margin css */
         .margin {
             margin-left: 50px;
         }
     </style>
 </head>
+
 <body>
     <h1>Bio Data Form</h1>
     <p>To know the details of students</p>
-
-    <label for="Name">Name:</label><br>
-    <input type="text" required id="Name" placeholder="Enter your name"><br>
-
-    <label for="FName">Father's Name:</label><br>
-    <input type="text" required id="FName" placeholder="Enter your father's name"><br>
-
-    <label for="MName">Mother's Name:</label><br>
-    <input type="text" required id="MName" placeholder="Enter your mother's name"><br>
-
-    <label for="Email">Email:</label><br>
-    <input type="email" required id="Email" placeholder="Enter your Email"><br>
-
-    <label for="Age">Age:</label><br>
-    <input type="number" required id="Age" placeholder="Age"><br>
-
-    <label for="DOB">D.O.B:</label><br>
-    <input type="date" required id="DOB" placeholder="Age"><br>
-
-    <label for="dept">Department:</label><br>
-        <select name="Select an option" id="dept">
+    <form action="">
+        <!-- Name:  -->
+        <label for="Name">Name:</label><br>
+        <input type="text" required id="Name" placeholder="Enter your name"><br>
+        <!-- Father's Name:  -->
+        <label for="FName">Father's Name:</label><br>
+        <input type="text" required id="FName" placeholder="Enter your father's name"><br>
+        <!-- Mother's Name:  -->
+        <label for="MName">Mother's Name:</label><br>
+        <input type="text" required id="MName" placeholder="Enter your mother's name"><br>
+        <!-- Email:  -->
+        <label for="Email">Email:</label><br>
+        <input type="email" required id="Email" placeholder="Enter your Email"><br>
+        <!-- Age:  -->
+        <label for="Age">Age:</label><br>
+        <input type="number" required id="Age" placeholder="Age"><br>
+        <!-- DOB  -->
+        <label for="DOB">D.O.B:</label><br>
+        <input type="date" required id="DOB" placeholder="Age"><br>
+        <!-- Department:  -->
+        <label for="dept">Department:</label><br>
+        <select name="Select an option" id="dept" required>
             <option value="Select an option">Select an option</option>
             <option value="">IT</option>
             <option value="">CSE</option>
@@ -42,52 +46,51 @@
             <option value="">CIVIL</option>
             <option value="">other</option>
         </select> <br>
-
-
+        <!-- gender  -->
         <label for="gender">Gender:</label> <br>
-
         <div class="margin">
-            <input type="radio" id="gender" placeholder="">
-                <label for="dept">Male</label><br>
-                <input type="radio" id="gender" placeholder="">
-                <label for="dept">Female</label><br>
-                <input type="radio" id="gender" placeholder="">
-                <label for="dept">Others</label><br>
+            <input type="radio" id="Male" name="gender">
+            <label for="Male">Male</label><br>
+            <input type="radio" id="Female" name="gender">
+            <label for="Female">Female</label><br>
+            <input type="radio" id="Others" name="gender">
+            <label for="Others">Others</label><br>
         </div>
+        <!-- Address:  -->
+        <label for="Address">Address:</label> <br>
+        <textarea name="" id="Address" cols="30" rows="5" placeholder="Enter your adress here..."></textarea><br>
+        <!-- Pincode  -->
+        <label for="Pincode">Pincode:</label> <br>
+        <input type="number" id="Pincode" placeholder="6-----"> <br>
+        <!-- Language Known: -->
+        <div class="">
+            <label for="Language">Language Known:</label> <br> <br> <br>
+            <div class="margin">
+                <input type="checkbox" id="English">
+                <label for="English">English</label> <br>
+                <input type="checkbox" id="Tamil">
+                <label for="Tamil">Tamil</label> <br>
+                <input type="checkbox" id="Hindi">
+                <label for="Hindi">Hindi</label> <br>
+                <input type="checkbox" id="Malayalam">
+                <label for="Malayalam">Malayalam</label> <br>
+                <input type="checkbox" id="Kannada">
+                <label for="Kannada">Kannada</label> <br>
+                <input type="checkbox" id="Telugu">
+                <label for="Telugu">Telugu</label> <br>
+                <input type="checkbox" id="Other">
+                <label for="Other">Others</label> <br> <br> <br>
+            </div>
+
+            <input type="submit">
+            <input type="reset">
+        </div>
+    </form>
 
 
-       <label for="">Address:</label> <br>
-       <textarea name="" id="" cols="30" rows="5" placeholder="Enter your adress here..."></textarea><br>
-
-       <label for="Pincode">Pincode:</label> <br>
-       <input type="number" placeholder="6-----"> <br>
-
-
-    <div class="">
-        <label for="Language">Language Known:</label> <br> <br> <br>
-
-    <div class="margin">
-        <input type="checkbox">
-    <label for="">English</label> <br>
-    <input type="checkbox">
-    <label for="">Tamil</label> <br>
-    <input type="checkbox">
-    <label for="">Hindi</label> <br>
-    <input type="checkbox">
-    <label for="">Malayalam</label> <br>
-    <input type="checkbox">
-    <label for="">Kannada</label> <br>
-    <input type="checkbox">
-    <label for="">Telugu</label> <br>
-    <input type="checkbox">
-    <label for="">Others</label> <br> <br> <br>
-    </div>
-
-    <input type="submit">
-    <input type="reset">
-    </div>
 
 
 
 </body>
+
 </html>
